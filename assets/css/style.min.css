@@ -120,6 +120,10 @@
   --plyr-video-control-background-hover: #fd6d22;
 }
 
+.plyr__controls__item.plyr__menu button.plyr__control{
+    display: none;
+}
+
 .banner-block.owl-carousel {
   position: relative;
   margin-top: 20px;
@@ -190,3 +194,4 @@ button.owl-prev {
   text-align: center;
   margin-bottom: 20px;
 }
+
