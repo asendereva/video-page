@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
-    <link rel="stylesheet" href="assets/css/plyr.css"/>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css"/>
     
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="assets/css/owl.theme.green.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     
-        
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     
     <!-- Useful meta tags -->
@@ -33,7 +33,7 @@
             <div class="header-section">
                     <div class="logo logo-enter">
                         <a href="/">
-                            <img src="https://webpromoexperts.net/images/img/logo.png">
+                            <img src="assets/images/logo.png">
                         </a>
                     </div>
                     <a href="/" class="logout-mobile">
@@ -60,7 +60,7 @@
             <div class="video-block col-xs-12 col-md-8">
                 <div class="plyr__video-embed" id="player">
                     <iframe
-                        src="https://www.youtube.com/watch?v=Rlk-pQZnzIs"
+                        src="https://youtu.be/lVAtiFTaN58"
                         allowfullscreen
                         allowtransparency    
                         allow="autoplay" frameborder="0">
@@ -73,23 +73,37 @@
             </div>
         </div>
         </div>
-       <div class="container">
+       <div class="container-fluid">
            <div class="row">
             <div class="banner-block owl-carousel owl-theme">
     
-                    <div class="item"> Slide 1 </div>
-                    <div class="item"> Slide 2 </div>
-                    <div class="item"> Slide 3 </div>
-                    <div class="item"> Slide 4 </div>
-                    <div class="item"> Slide 5 </div>
-                    <div class="item"> Slide 6 </div>
-                    <div class="item"> Slide 7 </div>
+                    <div class="item"> 
+                        <a href="https://webpromoexperts.net/courses/?utm_source=banner&utm_medium=courses&utm_campaign=dr9" target="_blank">
+                            <img class="banner-image" src="https://webpromoexperts.net/images/thumbs/cCtZJD90nY-1170-291.png?v=1.0" alt="">
+                        </a> 
+                    </div>
+                    <div class="item">
+                        <a href="https://webpromoexperts.net/courses/?utm_source=banner&utm_medium=courses&utm_campaign=dr9" target="_blank">
+                            <img class="banner-image" src="https://webpromoexperts.net/images/thumbs/rA2gC64nsm-1170-291.png?v=1.0" alt="">
+                        </a> 
+                    </div>
+                    <div class="item">
+                         <a href="https://webpromoexperts.net/courses/?utm_source=banner&utm_medium=courses&utm_campaign=dr9" target="_blank">
+                        <img class="banner-image" src="https://webpromoexperts.net/images/thumbs/y_rMJDWSXL-1170-291.png?v=1.0" alt="">
+                        </a>
+                    </div>
+                    <div class="item"> 
+                        <a href="https://webpromoexperts.net/courses/?utm_source=banner&utm_medium=courses&utm_campaign=dr9" target="_blank">
+                        <img class="banner-image" src="https://webpromoexperts.net/images/thumbs/rA2gC64nsm-1170-291.png?v=1.0" alt="">
+                    </a>
+                    </div>
+                    
            </div>
            
             </div>
             <div class="row">
                 <div class="logo-footer">
-                <img src="https://webpromoexperts.net/images/img/logo.png">
+                <img src="assets/images/logo.png">
                 </div>
             </div>
         </div> 
@@ -114,26 +128,26 @@
         const player = new Plyr('#player');
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
-            items: 3,
+            items: 2,
             margin: 10,
             loop:true,
             nav: true,
             dots: false,
             autoplay : true,
-            autoplayTimeout: 1000,
+            autoplayTimeout: 5000,
             responsive:{
             0:{
                 items:1
             },
             600:{
-                items:2
+                items:1
             },
             1000:{
-                items:3
+                items:2
             }
         }
         });
