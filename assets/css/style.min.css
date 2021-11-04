@@ -1,0 +1,192 @@
+.header {
+  padding: 5px 0 5px;
+  box-shadow: 0 1px 10px 0 rgba(58, 63, 63, 0.3);
+  z-index: 9;
+  background: #fff;
+}
+
+.header-fix {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .header-section {
+    flex-wrap: wrap;
+  }
+}
+
+.header-section .video-description {
+  display: flex;
+}
+
+.header-section .video-description .title {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.header-section .video-description .conferention-time {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .header-section .video-description .conferention-time {
+    display: none;
+  }
+}
+
+.header__wrapper-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .slogan {
+  margin-top: 20px;
+  font-size: 45px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #494949;
+  font-family: ProximaNova-RegularIt;
+}
+@media (max-width: 992px) {
+  .header .slogan {
+    margin: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-logout {
+    display: none;
+  }
+}
+
+.header-logout a {
+  color: #fd6d22;
+  padding: 9px 18px 9px 18px;
+  border-radius: 10px;
+  border: 1px solid #fd6d22;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.logout-mobile {
+  background: url(https://webpromoexperts.net/images/img/login-ico.png) center no-repeat;
+  background-size: contain;
+  width: 33px;
+  height: 40px;
+}
+@media (min-width: 992px) {
+  .logout-mobile {
+    display: none;
+  }
+}
+
+.content {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .video-block {
+    margin-bottom: 10px;
+  }
+}
+
+.chat-block {
+  background-color: burlywood;
+}
+
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+  background: #fd6d22;
+}
+.plyr--full-ui.plyr--video .plyr__control--overlaid:hover {
+  background: #fd6d22;
+}
+
+#player {
+  --plyr-range-fill-background: #fd6d22;
+  --plyr-video-control-background-hover: #fd6d22;
+}
+
+.banner-block.owl-carousel {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.banner-block.owl-carousel .item {
+  margin: 0 10px 0 10px;
+  background: #fd6d22;
+  height: 200px;
+}
+
+.banner-block .button-block {
+  position: relative;
+}
+
+span {
+  font-size: 60px;
+  color: #ec6707;
+}
+
+.owl-prew {
+  top: 35%;
+  font-size: 60px;
+  margin-top: -30px;
+  color: #ec6707;
+  cursor: pointer;
+}
+
+.owl-next {
+  top: 35%;
+  font-size: 60px;
+  margin-top: -30px;
+  color: #ec6707;
+  cursor: pointer;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0 !important;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #ec6707;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: none;
+  border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none !important;
+  color: #ec6707 !important;
+  text-decoration: none;
+}
+
+button.owl-prev {
+  background-color: none;
+}
+
+.logo-footer {
+  width: 114px;
+  text-align: center;
+  margin-bottom: 20px;
+}
